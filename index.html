@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heloween Website</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="img/halloween-logo.png" alt="" class="img-fluid">
+                </a>
+                <button class="navbar-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav nav-auto">
+                       <li><a href="#">home</a></li>
+                       <li><a href="#">about</a></li>
+                       <li><a href="#">artist</a></li>
+                       <li><a href="#">gallery</a></li>
+                       <li><a href="#">testimonial</a></li>
+                       <li><a href="#">contact</a></li>
+                    </ul>
+                    <ul class="navbar-nav navbar-right">
+                        <li><a href="#">get a tiket</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Home banner start -->
+    <div class="home-banner">
+        <div class="container-banner">
+            <div class="row">
+                <div class="home-img">
+                    <img src="img/banner.png" alt="" class="banner-img">
+                    <div class="cloud-img">
+                        <img src="img/cloud.png" alt="" style="--i:1">
+                        <img src="img/cloud.png" alt="" style="--i:2">
+                        <img src="img/cloud.png" alt="" style="--i:3">
+                        <img src="img/cloud.png" alt="" style="--i:4">
+                        <img src="img/cloud.png" alt="" style="--i:5">
+                    </div>
+                </div>
+                <div class="banner-details">
+                    <div class="container">
+                        <div class="banner-text">
+                            <h2 class="banner-title">
+                                haloween party
+                            </h2>
+                            <p class="banner-desc">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. 
+                                Veniam autem, sequi nisi aliquid 
+                                natus adipisci! Vel velit 
+                                doloribus maxime quam fugiat 
+                                officia explicabo cumque. 
+                                Accusantium suscipit placeat 
+                                architecto quam delectus?
+                            </p>
+                            <div class="banner-btn">
+                                <a href="#" class="btn">
+                                    explore more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Home banner end -->
+
+    <script>
+        const navToggler = 
+        document.querySelector(".navbar-toggler");
+
+        const links = 
+        document.querySelector(".navbar-collapse");
+
+        navToggler.addEventListener
+        ("click", function() {
+            links.classList.toggle("show-links");
+        })
+    </script>
+</body>
+</html>
